@@ -34,13 +34,6 @@ li {
 	vertical-align: baseline;
 }
 
-nav,
-footer,
-header,
-aside {
-	display: block;
-}
-
 a {
 	text-decoration: none;
 }
@@ -125,9 +118,6 @@ button {
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
 	height: 100%;
 	background-color: #f2f2f2;
 	font-family: "TTLakes", sans-serif;
@@ -140,7 +130,7 @@ body {
 .slide-menu {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
+	min-height: 100%;
 	width: 320px;
 	position: absolute;
 	left: 0;
@@ -150,7 +140,8 @@ body {
 }
 .header-slide-menu {
 	position: relative;
-
+	flex: 0 0 auto;
+	height: 100%;
 	padding: 20px 24px;
 }
 .header-slide-menu__icons {
@@ -165,21 +156,22 @@ body {
 }
 .header-slide-menu__icon-search {
 }
-main {
+main.content-container {
+	flex: 1 0 auto;
+	width: 100%;
 	height: 100%;
 }
 nav.content-container {
 	width: 100%;
-	height: 60%;
+	height: 100%;
 	padding: 26px 24px;
 }
 .menu-navigation {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	flex-wrap: wrap;
 	align-items: flex-start;
-	align-content: center;
-	min-height: 100%;
+	justify-content: flex-start;
 }
 
 .menu-navigation li {
@@ -189,7 +181,6 @@ nav.content-container {
 	height: 100%;
 	padding: 0 10px 0 0;
 	margin: 14px 0;
-	height: 100%;
 }
 
 .menu-navigation li:last-child {
@@ -237,7 +228,7 @@ nav.content-container {
 	height: 32px;
 	content: "";
 	position: absolute;
-	top: -7px;
+	top: -2px;
 	left: -24px;
 }
 .menu-navigation__services {
@@ -256,8 +247,9 @@ nav.content-container {
 }
 
 .footer {
-	position: relative;
+	flex: 0 1 auto;
 	padding: 20px 24px;
+	height: 100%;
 }
 .block-buttons {
 	display: flex;
