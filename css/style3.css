@@ -102,6 +102,22 @@ body{
 	margin: 0;
 }
 */
+
+.swiper-slide__content img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	margin-left: 20px;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
 button {
 	padding: 0;
 	border: none;
@@ -166,128 +182,38 @@ body {
 	content: url(icons/go.png);
 	display: inline-block;
 	position: absolute;
-	right: 5%;
-	bottom: 13%;
+	right: 10px;
+	top: 15px;
 }
 
-.swiper-slide__content-1::before {
-	content: url(icons/Bitmap.png);
+.button-all {
 	display: inline-block;
-	position: absolute;
-	left: 10%;
-	bottom: 17%;
+	position: relative;
+	margin-right: auto;
+	left: 50px;
+	bottom: -20px;
 }
 
-.swiper-slide__content-2::before {
-	content: url(icons/Samsung.png);
-	display: inline-block;
-	position: absolute;
-	left: 10%;
-	bottom: 22%;
-}
-
-.swiper-slide__content-3::before {
-	content: url(icons/Apple.png);
-	display: inline-block;
-	position: absolute;
-	left: 10%;
-	bottom: 15%;
-}
-
-.swiper-slide__content-4::before {
-	content: url(icons/Bosch.png);
-	display: inline-block;
-	position: absolute;
-	left: 10%;
-	bottom: 20%;
-}
-
-.swiper-slide__content-5::before {
-	content: url(icons/Hp.png);
-	display: inline-block;
-	position: absolute;
-	left: 10%;
-	bottom: 6%;
-}
-
-.swiper-slide__content-6::before {
-	content: url(icons/Acer.png);
-	display: inline-block;
-	position: absolute;
-	left: 10%;
-	bottom: 24%;
-}
-
-.swiper-slide__content-7::before {
-	content: url(icons/Viewsonic.png);
-	display: inline-block;
-	position: absolute;
-	left: 10%;
-	bottom: 29%;
-}
-
-.swiper-slide__content-8::before {
-	content: url(icons/Sony.png);
-	display: inline-block;
-	position: absolute;
-	left: 10%;
-	bottom: 25%;
-}
-
-.swiper-slide__content-9::before {
-	content: url(icons/Apple.png);
-	display: inline-block;
-	position: absolute;
-	left: 10%;
-	bottom: 15%;
-}
-
-.swiper-slide__content-10::before {
-	content: url(icons/Bitmap.png);
-	display: inline-block;
-	position: absolute;
-	left: 10%;
-	bottom: 17%;
-}
-
-.swiper-slide__content-11::before {
-	content: url(icons/Bitmap.png);
-	display: inline-block;
-	position: absolute;
-	left: 10%;
-	bottom: 17%;
-}
-
-#btn {
-	position: absolute;
-	left: 0;
-	bottom: -40px;
-	margin-left: 24px;
-	padding-left: 33px;
-}
-
-#btn::before {
+.button-all::before {
 	content: url(icons/icon.png);
 	display: inline-block;
 	position: absolute;
-	left: 7%;
-	bottom: 0;
+	left: -20px;
 }
 
-#btn.rotated {
-	margin-left: 24px;
-	padding-left: 33px;
-	position: absolute;
-	margin-bottom: 24px;
+.button-all-reverse {
+	display: inline-block;
+	position: relative;
+	margin-right: auto;
+	left: 50px;
+	bottom: 15px;
 }
 
-#btn.rotated::before {
-	content: url(icons/icon.png);
+.button-all-reverse::before {
+	content: url(icons/icon-reverse.png);
 	display: inline-block;
 	position: absolute;
-	left: 7%;
-	bottom: 0;
-	transform: rotate(180deg);
+	left: -20px;
 }
 
 .button-all-new {
@@ -297,7 +223,7 @@ body {
 	margin-bottom: 24px;
 }
 
-.button-all-new::before {
+button.button-all-new::before {
 	content: url(icons/icon.png);
 	display: inline-block;
 	position: absolute;
@@ -313,6 +239,7 @@ body {
 		min-width: 205px;
 		position: relative;
 		height: 72px;
+		line-height: 72px;
 		background-color: white;
 		border: 1px solid #eaeaea;
 		border-radius: 6px;
@@ -329,12 +256,11 @@ body {
 	.swiper-pagination {
 		position: relative;
 	}
-
-	#btn {
+	.button-all {
 		display: none;
 	}
 
-	#btn::before {
+	.button-all-reverse {
 		display: none;
 	}
 }
