@@ -1,12 +1,6 @@
-// init Swiper:
-
-
 let fullSlider = document.querySelector('.button-all');
-
-let text = fullSlider.textContent;
-let butn = document.getElementById('btn');
+let textButtonAll = fullSlider.textContent;
 let slider = document.querySelector('.slider-container');
-let wrapper = document.querySelector('.swiper-wrapper');
 let mySwiper;
 
 function mobileSlider() {
@@ -45,18 +39,20 @@ fullSlider.addEventListener('click', function () {
 	let toggle = slider.classList.toggle('slider-full');
 	if (toggle) {
 		fullSlider.textContent = 'Скрыть всё';
-		rotateArrow();
+		fullSlider.classList.add('button-all-reverse');
+		fullSlider.classList.remove('button-all');
 	}
 	else {
-		fullSlider.textContent = text;
-		butn.className = "";
+		fullSlider.textContent = textButtonAll;
+		fullSlider.classList.add('button-all');
+		fullSlider.classList.remove('button-all-reverse');
 	}
 });
 
-let rotateArrow = function () {
+/*let rotateArrow = function () {
 	butn.className = "rotated";
 	console.log(butn);
-};
+};*/
 
 
 
