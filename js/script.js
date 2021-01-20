@@ -1,6 +1,6 @@
 let fullSlider = document.querySelector('.button-all');
 let textButtonAll = fullSlider.textContent;
-let slider = document.querySelector('.slider-container');
+let slider = document.querySelector('.companies-list');
 let mySwiper;
 
 function mobileSlider() {
