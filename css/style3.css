@@ -136,10 +136,12 @@ body {
 	height: 100%;
 	width: 100%;
 }
+.slider-head {
+	margin: 0;
+}
 .header-slider {
 	background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
 	height: 100%;
-	margin: 0;
 	padding: 0;
 	width: 100%;
 	flex: 0 0 auto;
@@ -177,11 +179,13 @@ body {
 	right: 10px;
 	top: 15px;
 }
+.companies-list__button {
+	margin-right: auto;
+}
 
 .button-all {
 	display: inline-block;
 	position: relative;
-	margin-right: auto;
 	left: 50px;
 	bottom: -20px;
 }
@@ -196,7 +200,6 @@ body {
 .button-all-reverse {
 	display: inline-block;
 	position: relative;
-	margin-right: auto;
 	left: 50px;
 }
 
