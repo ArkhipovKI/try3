@@ -92,15 +92,16 @@ img {
 	font-weight: normal;
 	font-style: normal;
 }
-
+.companies-list__slide-content img {
+	margin: auto;
+	margin-left: 20px;
+}
 .swiper-slide__content img {
 	position: absolute;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
-	margin: auto;
-	margin-left: 20px;
 }
 
 ul {
