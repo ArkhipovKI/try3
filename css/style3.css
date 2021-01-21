@@ -282,10 +282,11 @@ button.button-all-new::before {
 	.companies-list__wrapper > .companies-list__slide:nth-child(3n) {
 		margin-right: 0;
 	}
-
+	.companies-list {
+		margin-bottom: auto;
+	}
 	.slider-container {
 		height: 180px;
-		margin-bottom: auto;
 	}
 	.slider-full {
 		height: 100%;
@@ -318,10 +319,11 @@ button.button-all-new::before {
 		flex-basis: 29.44%;
 		position: relative;
 	}
-
+	.companies-list {
+		margin-bottom: auto;
+	}
 	.slider-container {
 		height: 180px;
-		margin-bottom: auto;
 	}
 	.slider-full {
 		height: 100%;
