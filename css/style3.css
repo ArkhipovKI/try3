@@ -211,7 +211,7 @@ body {
 }
 
 @media screen and (min-width: 1px) and (max-width: 700px) {
-	.body__container {
+	.container {
 		min-width: 320px;
 	}
 	.companies-list__slide {
@@ -286,12 +286,10 @@ body {
 	}
 }
 @media screen and (min-width: 1121px) {
-	.body__container {
-				margin: 0 auto;
-	}
 	.container {
 		position: relative;
 		max-width: 1400px;
+		margin: 0 auto;
 	}
 	.swiper-wrapper {
 		padding-right: 24px;
