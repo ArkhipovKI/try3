@@ -173,7 +173,7 @@ body {
 }
 
 .swiper-slide > .link-arrow::after {
-	content: url(icons/go.png);
+	content: url(./icons/go.png);
 	display: inline-block;
 	position: absolute;
 	right: 10px;
@@ -191,7 +191,7 @@ body {
 }
 
 .button-all::before {
-	content: url(icons/icon.png);
+	content: url(./icons/icon.png);
 	display: inline-block;
 	position: absolute;
 	left: -20px;
@@ -204,24 +204,10 @@ body {
 }
 
 .button-all-reverse::before {
-	content: url(icons/icon-reverse.png);
+	content: url(./icons/icon-reverse.png);
 	display: inline-block;
 	position: absolute;
 	left: -20px;
-}
-.button-all-new {	
-	margin-left: 24px;	
-	padding-left: 33px;	
-	position: absolute;	
-	margin-bottom: 24px;	
-}	
-
-button.button-all-new::before {	
-	content: url(icons/icon.png);	
-	display: inline-block;	
-	position: absolute;	
-	left: 7%;	
-	bottom: 0;	
 }
 
 @media screen and (min-width: 1px) and (max-width: 700px) {
