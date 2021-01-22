@@ -136,7 +136,7 @@ body {
 	height: 100%;
 	width: 100%;
 }
-.slider-title {
+.container__title {
 	margin: 0;
 }
 .header-slider {
@@ -210,23 +210,8 @@ body {
 	left: -20px;
 }
 
-.button-all-new {
-	margin-left: 24px;
-	padding-left: 33px;
-	position: absolute;
-	margin-bottom: 24px;
-}
-
-button.button-all-new::before {
-	content: url(icons/icon.png);
-	display: inline-block;
-	position: absolute;
-	left: 7%;
-	bottom: 0;
-}
-
 @media screen and (min-width: 1px) and (max-width: 700px) {
-	.container {
+	.body__container {
 		min-width: 320px;
 	}
 	.companies-list__slide {
@@ -301,10 +286,12 @@ button.button-all-new::before {
 	}
 }
 @media screen and (min-width: 1121px) {
+	.body__container {
+				margin: 0 auto;
+	}
 	.container {
 		position: relative;
 		max-width: 1400px;
-		margin: 0 auto;
 	}
 	.swiper-wrapper {
 		padding-right: 24px;
