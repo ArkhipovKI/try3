@@ -209,6 +209,20 @@ body {
 	position: absolute;
 	left: -20px;
 }
+.button-all-new {	
+	margin-left: 24px;	
+	padding-left: 33px;	
+	position: absolute;	
+	margin-bottom: 24px;	
+}	
+
+button.button-all-new::before {	
+	content: url(icons/icon.png);	
+	display: inline-block;	
+	position: absolute;	
+	left: 7%;	
+	bottom: 0;	
+}
 
 @media screen and (min-width: 1px) and (max-width: 700px) {
 	.container {
